@@ -1,0 +1,14 @@
+{
+  "name": "abdullahalbhadli-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio landing page for Abedallah Albhadli",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve . --listen 5000",
+    "start": "npm run dev",
+    "preview": "npm run dev"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
