@@ -1,0 +1,58 @@
+{
+  "name": "Abdullah Albhadli Portfolio Dev",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  "forwardPorts": [5000, 5500],
+  "portsAttributes": {
+    "5000": {
+      "label": "Portfolio Dev Server (serve)",
+      "onAutoForward": "notify"
+    },
+    "5500": {
+      "label": "Live Server Preview",
+      "onAutoForward": "silent"
+    }
+  },
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-html-css",
+        "ms-vscode.vscode-css-peek",
+        "bradlc.vscode-tailwindcss",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-json",
+        "ritwickdey.liveserver",
+        "ms-vscode.vscode-eslint",
+        "eamodio.gitlens",
+        "ms-vscode.vscode-markdown-preview-enhanced",
+        "ms-vscode.vscode-css-intellisense",
+        "formulahendry.auto-rename-tag",
+        "christian-kohler.path-intellisense",
+        "ms-vscode.vscode-chrome-debug-core"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "css.validate": true,
+        "html.validate.scripts": true,
+        "html.validate.styles": true,
+        "emmet.includeLanguages": {
+          "html": "html"
+        },
+        "emmet.triggerExpansionOnTab": true,
+        "files.associations": {
+          "*.css": "css"
+        },
+        "liveServer.settings.port": 5500,
+        "liveServer.settings.root": "/",
+        "css.lint.unknownAtRules": "ignore"
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}

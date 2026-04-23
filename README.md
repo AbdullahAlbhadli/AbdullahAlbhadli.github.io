@@ -2,13 +2,24 @@
 
 A clean, professional portfolio landing page for Abedallah Albhadli, an early-career technology-focused undergraduate with an interest in finance.
 
+## Quick Start with Dev Container
+
+This project includes a development container for the best development experience:
+
+1. **Open in VS Code**
+2. **Use Command Palette**: `Dev Containers: Reopen in Container`
+3. **Start developing** - dependencies are auto-installed and server is ready
+
+See [.devcontainer/README.md](.devcontainer/README.md) for detailed setup instructions.
+
 ## Files
 
 - `index.html` — portfolio landing page structure
 - `styles.css` — page styling and visual design
 - `package.json` — npm project configuration and dev scripts
+- `.devcontainer/` — development container configuration
 
-## How to review the website
+## Manual Setup (Alternative)
 
 ### Option 1: Run the dev server
 
